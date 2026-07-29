@@ -1,0 +1,1 @@
+PUT profile photo here, e.g. profile-photo.jpg, then use it in src/components/Hero.jsx
