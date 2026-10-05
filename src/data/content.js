@@ -72,16 +72,16 @@ export const skillGroups = [
 ];
 
 export const experience = [
-  {
-    title: "Administrative Secretary & Frontend Support Coordinator",
+{
+    title: "Frontend Developer & Technical Support Specialist",
     org: "Zawia KSA · Saudi Arabia",
     duration: "Jul 2025 — Present",
     bullets: [
-      "Manage daily administrative operations — document preparation, filing systems, correspondence and office records.",
-      "Prepare reports, presentations, official letters, quotations and meeting minutes using Word, Excel, PowerPoint, Outlook and PDF tools; optimize UI performance, responsiveness and cross-browser compatibility.",
-      "Coordinate meetings, schedules and travel arrangements across management, clients, vendors and internal teams.",
-      "Support frontend web application activities using Vue.js, HTML, CSS and JavaScript when required by project teams.",
-      "Assist with website content updates, UI testing, project documentation and technical/business stakeholder coordination.",
+      "Develop and maintain responsive web application interfaces using Vue.js, JavaScript (ES6+), HTML5, and CSS3, ensuring high performance and cross-browser consistency.",
+      "Conduct UI/UX testing, bug triage, and performance optimizations to improve page load speed and user interaction workflows.",
+      "Collaborate cross-functionally with technical teams and business stakeholders to translate operational requirements into functional frontend components.",
+      "Manage version control workflows and release tracking using Git/GitHub, assisting with regular site updates and technical documentation.",
+      "Streamline internal documentation, operational reports, and technical correspondence to facilitate smooth project coordination between clients and engineering teams.",
     ],
   },
   {
