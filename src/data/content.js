@@ -155,28 +155,6 @@ const recentProjects = [
     "githubUrl": "https://github.com/rehan474/migratoglobal",
     "liveUrl": "https://migratoglobals.lovable.app",
     "image": "/projects/migrato.jpg"
-  },
-  {
-    "id": "developer-portfolio",
-    "tag": "React Portfolio",
-    "title": "Developer Portfolio",
-    "summary": "Component-based developer portfolio showcasing web projects, professional experience and applied AI research.",
-    "stack": [
-      "React",
-      "JavaScript",
-      "CSS3",
-      "Vite",
-      "Vercel"
-    ],
-    "overview": "A personal portfolio combining interactive project case studies, experience, research and contact information in a responsive React interface.",
-    "features": [
-      "Reusable sections and project case-study modals",
-      "Interactive hero and responsive layouts",
-      "Canonical/social metadata and Git-connected Vercel deployments"
-    ],
-    "githubUrl": "https://github.com/rehan474/mdrehan_portfolio",
-    "liveUrl": "https://mdrehanportfolio.vercel.app",
-    "image": "/projects/portfolio.jpg"
   }
 ];
 
@@ -316,7 +294,7 @@ export const chatKnowledge = {
   experience:
     "He currently works on frontend development, technical SEO, ERPNext/Frappe, and analytics as a Web Specialist at Zawia KSA (Jul 2025–present), and previously interned as a Frontend Developer at Design Webtech in Bengaluru (Jan–Jun 2025).",
   projects:
-    "Recent projects include Alif Galleria, Mad Labs, a bilingual React/TypeScript Migrato Global website, and this React portfolio. Earlier work includes a PHP/MySQL wellness e-commerce platform and a DCGAN/BigGAN flower generator.",
+    "Recent projects include Alif Galleria, Mad Labs, a bilingual React/TypeScript Migrato Global website. Earlier work includes a PHP/MySQL wellness e-commerce platform and a DCGAN/BigGAN flower generator.",
   education:
     "MCA from NMAM Institute of Technology, Nitte (2023–2025, CGPA 8.87), and BCA from Alva's College, Moodbidri (2019–2022, CGPA 7.15).",
   research:
