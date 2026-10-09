@@ -12,6 +12,7 @@ function ProjectModal({ project, onClose }) {
         </span>
         <div className="m-tag">{project.tag}</div>
         <h3>{project.title}</h3>
+        {project.image && <img className="project-screenshot" src={project.image} alt={`${project.title} website screenshot`} loading="lazy" width="1440" height="810" />}
 
         <h4>Overview</h4>
         <p>{project.overview}</p>
@@ -128,6 +129,7 @@ function ProjectCard({ project, onOpen }) {
     >
       <div className="proj-tag">{project.tag}</div>
       <h3>{project.title}</h3>
+        {project.image && <img className="project-screenshot" src={project.image} alt={`${project.title} website screenshot`} loading="lazy" width="1440" height="810" />}
       <p>{project.summary}</p>
       <div className="proj-stack">
         {project.stack.map((s) => (

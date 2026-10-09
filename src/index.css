@@ -233,3 +233,5 @@ footer{padding:60px 5vw 30px;border-top:1px solid var(--line);margin-top:60px;}
   .skill-groups, .card-grid{grid-template-columns:1fr;}
   section{padding:100px 6vw 20px;}
 }
+
+.project-screenshot{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;border-radius:12px;margin:16px 0;border:1px solid var(--glass-brd);}
