@@ -9,7 +9,7 @@ export default function About() {
         <span className="num">01</span> About
       </div>
       <Reveal as="h2" className="title">
-        From admin precision to AI research
+        Frontend engineering with practical business experience
       </Reveal>
       <div className="about-grid">
         <Reveal className="about-body">

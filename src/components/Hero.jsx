@@ -91,7 +91,7 @@ export default function Hero() {
                 .join("")}
             </div>
           </div>
-          <div className="photo-caption">Frontend · AI/ML · Cloud &amp; Security</div>
+          <div className="photo-caption">Vue.js · JavaScript · REST APIs</div>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ export default function Footer() {
             MD Rehan<span style={{ color: "var(--mute)", fontWeight: 400 }}>.dev</span>
           </div>
           <p style={{ color: "var(--mute)", fontSize: 13.5, maxWidth: 280, lineHeight: 1.7 }}>
-            Frontend developer &amp; AI/ML researcher based in {profile.location}. Open to relocation.
+            Frontend and software developer based in {profile.location}. Open to relocation.
           </p>
         </div>
         <div className="footer-links">

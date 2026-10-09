@@ -14,28 +14,21 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/mdrehan474",
   github: "https://github.com/rehan474",
   resumeFile: "/Resume/MOHAMMAD_REHAN_SAUDI__RESUME.pdf", // drop your real PDF here with this filename
-  roles: [
-    "Frontend Developer",
-    "AI & Computer Vision Researcher",
-    "Cloud Foundations (OCI · AWS)",
-    "Cybersecurity Enthusiast",
-  ],
-  heroSub:
-    "MCA graduate building at the intersection of generative AI, frontend engineering and cloud & security foundations — with IEEE-linked research and patent filings on GAN-based image synthesis.",
+  roles: ["Frontend Developer", "Software Developer", "Vue.js Developer"],
+  heroSub: "I build responsive web applications with Vue.js, JavaScript, and REST APIs. Based in Riyadh and seeking frontend and software developer roles across Saudi Arabia.",
   bio: [
-    "I'm an MCA graduate (NMAM Institute of Technology, Nitte) with a technical core in frontend development, artificial intelligence and computer vision, currently based in Riyadh, Saudi Arabia.",
-    "My research runs through generative image synthesis: training DCGAN and BigGAN models for text-to-image generation, publishing in IEEE Xplore, and filing Indian patents around flower image generation systems.",
-    "On the cloud and security side, I hold an Oracle Cloud Infrastructure AI Foundations certification and an AWS Solutions Architecture job simulation, and I'm actively building toward cybersecurity and cloud engineering roles alongside frontend and AI/ML work.",
+    "I'm an MCA graduate from NMAM Institute of Technology, Nitte (CGPA: 8.87/10), building component-based web interfaces with Vue.js, JavaScript (ES6+), HTML5, CSS3, and Bootstrap.",
+    "At Zawia KSA, my work spans frontend development, REST API integration, technical SEO, ERPNext/Frappe customisation, and SQL/MySQL dashboards in Metabase. Previously, I interned as a Frontend Developer at Design Webtech in Bengaluru.",
+    "My applied AI research includes an IEEE Xplore publication on text-to-image flower generation and three published Indian patent applications. I bring this problem-solving experience to practical web applications and am open to relocating within Saudi Arabia.",
   ],
-  tags: ["Vue.js", "PyTorch", "GANs", "Oracle Cloud", "AWS", "MySQL", "Flask"],
+  tags: ["Vue.js", "JavaScript", "REST APIs", "HTML5", "CSS3", "MySQL", "Git"],
 };
 
 export const stats = [
-  { count: 3, suffix: "", label: "Research Papers (IEEE-linked)" },
-  // TODO: confirm exact patent count/details — resume text listed 2, Rehan says 3
-  { count: 3, suffix: "", label: "Indian Patents Filed" },
-  { count: 94, suffix: "%", label: "Best GAN Accuracy (BigGAN, 10 classes)" },
-  { count: 4, suffix: "+", label: "Professional Certifications" },
+  { count: 2, suffix: "", label: "Professional Roles" },
+  { count: 1, suffix: "", label: "IEEE Xplore Publication" },
+  { count: 3, suffix: "", label: "Published Patent Applications" },
+  { count: 2, suffix: "", label: "Computing Degrees" },
 ];
 
 export const skillGroups = [
@@ -50,7 +43,7 @@ export const skillGroups = [
     ],
   },
   {
-    title: "AI / Machine Learning",
+    title: "Applied AI & Web Interfaces",
     skills: [
       { name: "PyTorch", level: 82 },
       { name: "GANs / DCGAN / BigGAN", level: 88 },
@@ -60,28 +53,29 @@ export const skillGroups = [
     ],
   },
   {
-    title: "Cloud, Data & Security",
+    title: "Data, ERP & Tools",
     skills: [
-      { name: "Oracle Cloud Infrastructure", level: 75 },
-      { name: "AWS (Architecture Concepts)", level: 65 },
+      { name: "ERPNext / Frappe", level: 75 },
+      { name: "Metabase Dashboards", level: 75 },
       { name: "MySQL / SQL / DBMS", level: 80 },
-      { name: "Cybersecurity Foundations", level: 62 },
-      { name: "GitHub", level: 85 },
+      { name: "REST API Integration", level: 80 },
+      { name: "Git / GitHub", level: 85 },
     ],
   },
 ];
 
 export const experience = [
 {
-    title: "Frontend Developer & Technical Support Specialist",
+    title: "Web Specialist — Frontend Development",
     org: "Zawia KSA · Saudi Arabia",
     duration: "Jul 2025 — Present",
     bullets: [
-      "Develop and maintain responsive web application interfaces using Vue.js, JavaScript (ES6+), HTML5, and CSS3, ensuring high performance and cross-browser consistency.",
-      "Conduct UI/UX testing, bug triage, and performance optimizations to improve page load speed and user interaction workflows.",
-      "Collaborate cross-functionally with technical teams and business stakeholders to translate operational requirements into functional frontend components.",
-      "Manage version control workflows and release tracking using Git/GitHub, assisting with regular site updates and technical documentation.",
-      "Streamline internal documentation, operational reports, and technical correspondence to facilitate smooth project coordination between clients and engineering teams.",
+      "Develop responsive enterprise web interfaces using Vue.js, JavaScript, HTML5, and CSS3 with reusable components.",
+      "Integrate frontend applications with REST APIs and collaborate with backend teams on reliable data flows.",
+      "Debug UI issues and optimise page-load behaviour, responsiveness, and cross-browser compatibility.",
+      "Customise ERPNext/Frappe workflows, DocTypes, and fields for departmental business processes.",
+      "Connect SQL/MySQL sources to Metabase dashboards for KPI tracking and operational reporting.",
+      "Support technical and on-page SEO, including metadata, site structure, indexation, and Core Web Vitals.",
     ],
   },
   {
@@ -97,7 +91,7 @@ export const experience = [
   },
 ];
 
-export const projects = [
+const selectedProjects = [
   {
     id: "proj1",
     tag: "Deep Learning",
@@ -131,7 +125,7 @@ export const projects = [
       "A PHP–MySQL e-commerce application built for a wellness center specializing in herbal products.",
     features: [
       "Product listings and shopping cart",
-      "Secure user authentication",
+      "User authentication",
       "Order management",
       "Subscription system for consultation services with personalized session tracking",
     ],
@@ -139,6 +133,8 @@ export const projects = [
     liveUrl: null,
   },
 ];
+
+export const projects = [...selectedProjects].sort((a, b) => Number(b.tag === "Web Development") - Number(a.tag === "Web Development"));
 
 export const research = [
   {
@@ -150,14 +146,14 @@ export const research = [
   },
   {
     marker: "02",
-    status: "Published · ICISML 2026",
+    status: "Accepted · ICISML 2026",
     title: "Gradio-Enabled Dual-Model Waste Classifier: From-Scratch CNN vs MobileNetV2",
     venue: "6th International Conference on Intelligent Systems and Machine Learning",
     url: null,
   },
   {
     marker: "03",
-    status: "Accepted · IEEE",
+    status: "Under Review · IEEE",
     title: "Text-Guided Floral Image Synthesis Using BigGAN: A Comparative Evaluation with DCGAN",
     venue: "Comparative study of generative architectures",
     url: null,
@@ -178,7 +174,7 @@ export const patents = [
   {
     marker: "P3",
     title: "A Dual-Model Smart Waste Classifier System",
-    detail: "App No. 202541133604 A · Filed 30/12/2025 · Published 09/01/2026S",
+    detail: "App No. 202541133604 A · Filed 30/12/2025 · Published 09/01/2026",
   },
 ];
 
@@ -211,11 +207,11 @@ export const faq = [
   },
   {
     q: "What roles are you targeting?",
-    a: "Frontend development, AI/ML & computer vision, and cloud/cybersecurity-adjacent engineering roles.",
+    a: "Frontend Developer, Vue.js Developer, and Software Engineer roles across Saudi Arabia.",
   },
   {
     q: "Do you have publications?",
-    a: "Yes — TWO IEEE Xplore publication, one paper accepted at ICISML 2026, and one under review, all on GAN-based image synthesis.",
+    a: "My résumé lists one IEEE Xplore publication, one paper accepted at ICISML 2026, and one IEEE submission under review. My research covers generative image synthesis and waste classification.",
   },
   {
     q: "Can I see your résumé?",
@@ -229,13 +225,13 @@ export const chatKnowledge = {
   skills:
     "Rehan works across JavaScript, Vue.js, HTML/CSS, PHP and Python on the frontend, PyTorch/GANs (DCGAN, BigGAN) in AI/ML, and MySQL, Oracle Cloud Infrastructure and AWS concepts on the data/cloud side.",
   experience:
-    "He's currently an Administrative Secretary & Frontend Support Coordinator at Zawia KSA (Jul 2025–present), and previously interned as a Frontend Developer at Design Webtech in Bengaluru (Jan–Jun 2025).",
+    "He currently works on frontend development, technical SEO, ERPNext/Frappe, and analytics as a Web Specialist at Zawia KSA (Jul 2025–present), and previously interned as a Frontend Developer at Design Webtech in Bengaluru (Jan–Jun 2025).",
   projects:
-    "Two flagship projects: a DCGAN/BigGAN text-to-image flower generator (94% accuracy with BigGAN), and a PHP/MySQL wellness-center e-commerce platform.",
+    "Projects include a PHP/MySQL wellness-center e-commerce platform and a DCGAN/BigGAN flower generator with a Flask/Gradio interface.",
   education:
     "MCA from NMAM Institute of Technology, Nitte (2023–2025, CGPA 8.87), and BCA from Alva's College, Moodbidri (2019–2022, CGPA 7.15).",
   research:
-    "TWO IEEE Xplore publication, one paper accepted at ICISML 2026, one under review — plus multiple Indian patent filings on flower image generation systems.",
+    "One IEEE Xplore publication, one paper accepted at ICISML 2026, and one IEEE submission under review, as listed in his résumé. He also has three published Indian patent applications.",
   contact:
     "Reach Mohammad Rehan at mohorehan@gmail.com, +966 50 702 1474, or via LinkedIn (mdrehan474) and GitHub (rehan474).",
   location: "Based in Riyadh, Saudi Arabia — open to relocation.",
