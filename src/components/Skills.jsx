@@ -45,11 +45,10 @@ export default function Skills() {
         <span className="num">02</span> Skills
       </div>
       <Reveal as="h2" className="title">
-        A practical, cross-disciplinary stack
+        Tools for building useful web applications
       </Reveal>
       <Reveal as="p" className="lede">
-        Tools I reach for across frontend delivery, applied AI research, data, and cloud &amp;
-        security foundations.
+        Vue.js and JavaScript for interfaces, REST APIs for integration, and SQL tools for data and reporting.
       </Reveal>
       <div className="skill-groups">
         {skillGroups.map((group) => (
@@ -62,9 +61,8 @@ export default function Skills() {
         ))}
       </div>
       <Reveal className="admin-note">
-        <b>Also fluent in office &amp; operations tooling</b> — Microsoft Word, Excel, PowerPoint,
-        Outlook, document control, filing systems, business correspondence and report
-        preparation, from day-to-day work as an Administrative Secretary.
+        <b>Business systems experience</b> — ERPNext/Frappe workflows, custom DocTypes,
+        Metabase KPI dashboards, technical SEO, and Core Web Vitals.
       </Reveal>
     </section>
   );

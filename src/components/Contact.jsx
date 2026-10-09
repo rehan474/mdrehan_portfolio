@@ -112,7 +112,7 @@ export default function Contact() {
         Let's build something
       </Reveal>
       <Reveal as="p" className="lede">
-        Open to frontend, AI/ML and cloud-adjacent roles — in Saudi Arabia and internationally.
+        Open to Frontend Developer and Software Engineer roles across Saudi Arabia.
       </Reveal>
       <div className="contact-grid">
         <Reveal>
