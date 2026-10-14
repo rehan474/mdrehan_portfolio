@@ -12,7 +12,13 @@ function ProjectModal({ project, onClose }) {
         </span>
         <div className="m-tag">{project.tag}</div>
         <h3>{project.title}</h3>
-        {project.image && <img className="project-screenshot" src={project.image} alt={`${project.title} website screenshot`} loading="lazy" width="1440" height="810" />}
+        {project.dates && <p className="project-dates">{project.dates}</p>}
+        {project.screenshots?.length ? project.screenshots.map((shot) => (
+          <figure key={shot.src} style={{ margin: "16px 0" }}>
+            <img className="project-screenshot" src={shot.src} alt={`${project.title}: ${shot.caption}`} loading="lazy" width="1280" height="720" />
+            <figcaption style={{ color: "var(--muted)", fontSize: 13 }}>{shot.caption}</figcaption>
+          </figure>
+        )) : project.image && <img className="project-screenshot" src={project.image} alt={`${project.title} website screenshot`} loading="lazy" width="1440" height="810" />}
 
         <h4>Overview</h4>
         <p>{project.overview}</p>
@@ -130,6 +136,7 @@ function ProjectCard({ project, onOpen }) {
       <div className="proj-tag">{project.tag}</div>
       <h3>{project.title}</h3>
         {project.image && <img className="project-screenshot" src={project.image} alt={`${project.title} website screenshot`} loading="lazy" width="1440" height="810" />}
+      {project.dates && <p className="project-dates">{project.dates}</p>}
       <p>{project.summary}</p>
       <div className="proj-stack">
         {project.stack.map((s) => (

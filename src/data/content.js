@@ -92,6 +92,83 @@ export const experience = [
 ];
 
 const recentProjects = [
+{
+  "id": "clas-trading",
+  "tag": "Nuxt & Vue",
+  "title": "Clas Trading Co.",
+  "dates": "Sep 2026 – Oct 2026",
+  "summary": "Arabic-first wholesale showcase with bilingual product collections, brand pages and WhatsApp enquiries.",
+  "stack": [
+    "Nuxt",
+    "Vue.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Pinia"
+  ],
+  "overview": "A bilingual wholesale website for children’s clothing, built with reusable Nuxt/Vue components and structured Arabic/English catalogue content.",
+  "features": [
+    "Arabic RTL and English LTR layouts with localized navigation",
+    "Brand, collection and product pages with image browsing",
+    "Size guide, FAQ, journal and visit pages",
+    "Localized metadata, canonical/hreflang links and sitemap support",
+    "Motion controls and reduced-motion fallbacks"
+  ],
+  "githubUrl": "https://github.com/rehan474/clas-trading-co.",
+  "liveUrl": "https://www.clastradingcompany.com/ar",
+  "image": "/projects/clas-ar-home.jpg",
+  "screenshots": [
+    {
+      "src": "/projects/clas-ar-home.jpg",
+      "caption": "Arabic homepage and RTL layout"
+    },
+    {
+      "src": "/projects/clas-en-home.jpg",
+      "caption": "English homepage"
+    },
+    {
+      "src": "/projects/clas-collections.jpg",
+      "caption": "Product collections"
+    }
+  ]
+},
+{
+  "id": "webtron-solutions",
+  "tag": "Next.js & React",
+  "title": "Webtron Solutions",
+  "dates": "Sep 2026 – Oct 2026",
+  "summary": "Services website with reusable pages, pricing, bilingual content and a validated enquiry form.",
+  "stack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Zod"
+  ],
+  "overview": "A component-based services and marketing website, adapting a supplied visual reference into a distinct Webtron interface.",
+  "features": [
+    "Responsive navigation, reusable service pages, pricing cards and FAQ accordions",
+    "English and Arabic service content with theme switching",
+    "React Hook Form and Zod enquiry validation with optional Resend delivery",
+    "Metadata, structured data and sitemap support",
+    "Clearly labelled concept projects and blog content"
+  ],
+  "liveUrl": "https://www.webtronsolutions.com/",
+  "image": "/projects/webtron-home.jpg",
+  "screenshots": [
+    {
+      "src": "/projects/webtron-home.jpg",
+      "caption": "Homepage"
+    },
+    {
+      "src": "/projects/webtron-pricing.jpg",
+      "caption": "Pricing section"
+    },
+    {
+      "src": "/projects/webtron-service.jpg",
+      "caption": "Service detail page"
+    }
+  ]
+},
   {
     "id": "alif-galleria",
     "tag": "Business Website",
