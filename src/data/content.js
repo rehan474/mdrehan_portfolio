@@ -93,6 +93,72 @@ export const experience = [
 
 const recentProjects = [
 {
+  "id": "neox-shop",
+  "tag": "Multi-Vendor E-Commerce",
+  "title": "NeoX Shop",
+  "dates": "Aug 2026 – Sep 2026",
+  "summary": "Bilingual multi-vendor e-commerce application covering the customer storefront, catalogue administration and operational reporting.",
+  "stack": [
+    "Multi-Vendor Commerce",
+    "Arabic / English",
+    "Catalogue Management",
+    "Role-Based Access"
+  ],
+  "stackLabel": "Project scope",
+  "overview": "Created a multi-vendor e-commerce application with English and Arabic storefronts and centralized administration for catalogue, sales, inventory and staff workflows.",
+  "features": [
+    "English LTR and Arabic RTL storefronts with product/category search, wishlist and cart interfaces",
+    "Category and product browsing, merchandising sections and product recommendations",
+    "Hierarchical catalogue categories, bulk add/import controls and moderation workflows",
+    "Management modules for orders, customers, coupons, reviews, abandoned carts and store content",
+    "Revenue, order-status, category-sales and payment-method dashboards",
+    "Inventory reporting, stock alerts and export controls",
+    "Configurable staff roles with module-level permissions"
+  ],
+  "image": "/projects/neox-storefront-en.png",
+  "screenshots": [
+    {
+      "src": "/projects/neox-storefront-en.png",
+      "caption": "English storefront"
+    },
+    {
+      "src": "/projects/neox-storefront-ar.png",
+      "caption": "Arabic RTL storefront"
+    },
+    {
+      "src": "/projects/neox-catalogue.png",
+      "caption": "Category collections and product catalogue"
+    },
+    {
+      "src": "/projects/neox-recommendations.png",
+      "caption": "Product recommendations and storefront footer"
+    },
+    {
+      "src": "/projects/neox-dashboard.png",
+      "caption": "Admin dashboard and order overview"
+    },
+    {
+      "src": "/projects/neox-categories.png",
+      "caption": "Hierarchical category management"
+    },
+    {
+      "src": "/projects/neox-sales-analytics.png",
+      "caption": "Category sales, payment breakdowns and stock alerts"
+    },
+    {
+      "src": "/projects/neox-inventory-reports.png",
+      "caption": "Inventory reporting"
+    },
+    {
+      "src": "/projects/neox-roles.png",
+      "caption": "Staff roles and module-level permissions"
+    }
+  ],
+  "results": [
+    "Screenshots demonstrate the application interface; displayed sales and inventory figures are not claimed as verified business outcomes."
+  ]
+},
+{
   "id": "clas-trading",
   "tag": "Nuxt & Vue",
   "title": "Clas Trading Co.",

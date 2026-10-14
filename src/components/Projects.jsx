@@ -66,7 +66,7 @@ function ProjectModal({ project, onClose }) {
           </>
         )}
 
-        <h4>Technologies</h4>
+        <h4>{project.stackLabel || "Technologies"}</h4>
         <p>{project.stack.join(", ")}</p>
 
         {(project.githubUrl || project.liveUrl) && (
