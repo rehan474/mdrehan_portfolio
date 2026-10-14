@@ -238,6 +238,8 @@ const recentProjects = [
 const selectedProjects = [
   {
     id: "proj1",
+    image: "/projects/text2flower-home.jpg",
+    screenshots: [{src: "/projects/text2flower-home.jpg", caption: "Original Text2Flower interface screenshot"}],
     tag: "Deep Learning",
     title: "Enhanced Text-to-Image Flower Generator",
     summary:
@@ -260,6 +262,8 @@ const selectedProjects = [
   },
   {
     id: "proj2",
+    image: "/projects/wellness-concept.jpg",
+    screenshots: [{src: "/projects/wellness-concept.jpg", caption: "AI-generated concept visual illustrating the project scope; not an original application screenshot."}],
     tag: "Web Development",
     title: "Wellness Center E-Commerce Platform",
     summary:
