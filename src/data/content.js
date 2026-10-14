@@ -99,13 +99,15 @@ const recentProjects = [
   "dates": "Aug 2026 – Sep 2026",
   "summary": "Bilingual multi-vendor e-commerce application covering the customer storefront, catalogue administration and operational reporting.",
   "stack": [
-    "Multi-Vendor Commerce",
-    "Arabic / English",
-    "Catalogue Management",
-    "Role-Based Access"
+    "React",
+    "JavaScript",
+    "Vite",
+    "Tailwind CSS",
+    "Base44",
+    "TypeScript"
   ],
-  "stackLabel": "Project scope",
-  "overview": "Created a multi-vendor e-commerce application with English and Arabic storefronts and centralized administration for catalogue, sales, inventory and staff workflows.",
+  "stackLabel": "Technologies",
+  "overview": "A Base44-assisted multi-vendor e-commerce application with a React/Vite frontend, Tailwind CSS, managed entities/authentication and server-side TypeScript functions. Covers bilingual shopping and centralized catalogue, sales, inventory and staff administration. Source code is hosted in a friend's GitHub repository.",
   "features": [
     "English LTR and Arabic RTL storefronts with product/category search, wishlist and cart interfaces",
     "Category and product browsing, merchandising sections and product recommendations",
@@ -113,7 +115,8 @@ const recentProjects = [
     "Management modules for orders, customers, coupons, reviews, abandoned carts and store content",
     "Revenue, order-status, category-sales and payment-method dashboards",
     "Inventory reporting, stock alerts and export controls",
-    "Configurable staff roles with module-level permissions"
+    "Configurable staff roles with module-level permissions",
+    "Server-side functions for vendor registration/product management, order placement and staff access"
   ],
   "image": "/projects/neox-storefront-en.png",
   "screenshots": [
@@ -156,7 +159,8 @@ const recentProjects = [
   ],
   "results": [
     "Screenshots demonstrate the application interface; displayed sales and inventory figures are not claimed as verified business outcomes."
-  ]
+  ],
+  "githubUrl": "https://github.com/sohailmd413/neox-shop"
 },
 {
   "id": "clas-trading",
