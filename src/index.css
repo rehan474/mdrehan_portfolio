@@ -1,3 +1,4 @@
+@scope (.legacy) {
 :root{
   --black:#050816;
   --navy:#0b1030;
@@ -235,3 +236,5 @@ footer{padding:60px 5vw 30px;border-top:1px solid var(--line);margin-top:60px;}
 }
 
 .project-screenshot{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;border-radius:12px;margin:16px 0;border:1px solid var(--glass-brd);}
+
+}
