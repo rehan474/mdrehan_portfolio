@@ -1,0 +1,27 @@
+
+.text-stroke {
+    &-white {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        &-3 {
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 3px #fff;  
+        }
+    }
+    &-black {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px hsl(var(--heading-color));
+    }
+    &-neutral-900 {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px var(--neutral-900);
+    }
+    &-main-600 {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px var(--main-600);
+    }
+    &-main-three-600 {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px var(--main-three-600);
+    }
+}

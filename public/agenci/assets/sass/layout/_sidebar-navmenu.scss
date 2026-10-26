@@ -1,0 +1,64 @@
+/* sidebar navmenu css start */
+.sidebar-navmenu {
+    max-width: 360px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    z-index: 999999;
+    transform: translateX(100%);
+    transition: .3s linear;
+    &.active {
+        transform: translateX(0);
+        @include md-screen {
+            display: none;
+        }
+    }
+    .sidebar-navmenu__list {
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .nav-menu__item {
+        width: 100%;
+    }
+
+    .nav-submenu {
+        transform: scaleY(1);
+    }
+
+    .mega-menu {
+        margin-inline-start: 0;
+        margin-block: 16px;
+        padding-inline-end: 8px;
+
+        .row {
+            display: block;
+
+            .col {
+                width: 100%;
+            }
+        }
+    }
+
+    .nav-menu__link,
+    .nav-submenu__link {
+        border-bottom: 1px solid #e5e7eb4f !important;
+    }
+
+    .nav-menu__item {
+        width: 100%;
+        transform: translate(0) !important;
+        opacity: 1 !important;
+    }
+}
+.body-overlay.apply {
+    @include md-screen {
+        display: none;
+    }
+}
+
+
+/* sidebar navmenu css end */

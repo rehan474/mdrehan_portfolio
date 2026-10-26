@@ -1,0 +1,37 @@
+
+/* ================================= Classes Css Start =========================== */
+.col-xs-6 {
+    @media screen and (min-width: 425px) and (max-width: 575px) {
+        width: 50%;
+    }
+}
+
+.tw-leading {
+    &-none {
+        line-height: 1;
+    }
+}
+
+.opacity-05 {
+    opacity: .05;
+}
+
+.opacity-1 {
+    opacity: .1;
+}
+
+
+.home-one-bg {
+    background-color: #101010 !important;
+}
+.home-two-bg {
+    background-color: #2c2316 !important;
+}
+.home-three-bg {
+    background-color: hsl(var(--white)) !important;
+}
+.home-five-bg {
+    background-color: #070125;
+}
+
+/* ================================= Classes Css End =========================== */

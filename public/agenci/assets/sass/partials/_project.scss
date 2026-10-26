@@ -1,0 +1,61 @@
+.project-two {
+    &-area {
+        @include md-screen {
+            padding-block-end: 0;
+        }   
+    }
+    &-sticky {
+        @include lg-screen {
+            margin-block-end: 40px;
+        }   
+    }
+    &-wrap {
+        @include xl-screen {
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+
+
+
+
+.project-four {
+    &-panels-three {
+        margin-inline-end: -125px;
+    }
+    &-wrapper {
+        max-width: 523px;
+        width: 523px;
+    }
+}
+
+
+
+
+
+.project-five {
+    &-area {
+        padding-block-end: 170px; 
+        @include md-screen {
+            padding-block-end: 0;
+        }
+    }
+    &-wrapper {
+        background: #181334;
+        border: 1px solid rgba(255, 255, 255, 0.33);
+        @include sm-screen {
+            flex-wrap: wrap;
+        }
+    }
+    &-paragraph {
+        margin-inline-end: -100px;
+        @include sm-screen {
+            margin-inline-end: 0;
+        }
+    }
+}
+
+
+

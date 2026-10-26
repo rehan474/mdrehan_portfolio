@@ -1,0 +1,51 @@
+/* Mega menu css start */
+.mega-menu {
+  position: absolute;
+  inset-block-start: 100%;
+  background-color: #fff;
+  width: 100%;
+  inset-inline-start: 0;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  max-height: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @media (max-width: 991px) {
+    margin-block: 16px !important;
+    margin-inline-start: 0 !important;
+    padding-inline-end: 4px !important;
+  }
+}
+
+.mega-menu-item {
+  &__buttons {
+    transition: all 0.5s;
+  }
+  &__overlay {
+    background-color: #0000008c;
+    transition: all 0.25s;
+  }
+  &__buttons {
+    margin-top: -60px;
+    transform: scale(0.8);
+    & .theme-btn {
+        padding-block: 9px;
+    }
+  }
+  &:hover {
+    .mega-menu-item {
+      &__buttons {
+        transition-delay: 0.1s;
+        margin-top: 0px;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.mega-menu-item__buttons {
+  & .theme-btn-main:hover .theme-btn {
+    transform: translateX(40px);
+  }
+}
+/* Mega menu css end */

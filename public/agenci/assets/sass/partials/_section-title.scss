@@ -1,0 +1,36 @@
+.section-title {
+    @include msm-screen {
+        font-size: 4.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+.section-two {
+    &-title {
+        line-height: 98%;
+        @include xl-screen {
+            font-size: 4.4rem;
+        }
+        @include sm-screen {
+            font-size: 4rem;
+        }
+    }
+}
+
+
+
+
+.section-five {
+    &-wrapper {
+        @include sm-screen {
+            margin-inline-end: 0;
+        }
+
+    }
+}

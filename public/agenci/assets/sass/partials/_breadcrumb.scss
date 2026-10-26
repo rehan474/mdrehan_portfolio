@@ -1,0 +1,37 @@
+.breadcrumb {
+    &-area {
+        padding-block: 223px 90px;
+    }
+    &-shape {
+        &-1 {
+            inset-block-end: -80px;
+            inset-inline-start: 263px;
+            @include xxl-screen {
+                inset-inline-start: 120px;
+            }
+            @include xl-screen {
+                inset-inline-start: 80px;
+            }
+            @include md-screen {
+                display: none;
+            }
+        }
+        &-2 {
+            inset-block-start: 36%;
+            inset-inline-end: 13%;
+            animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
+            @include xxl-screen {
+                inset-inline-end: 7%;
+            }
+            @include xl-screen {
+                inset-inline-end: 5%;
+            }
+            @include lg-screen {
+                inset-inline-end: 3%;
+            }
+            @include md-screen {
+                display: none;
+            }
+        }
+    }
+}

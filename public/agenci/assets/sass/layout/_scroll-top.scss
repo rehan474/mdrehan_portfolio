@@ -1,0 +1,44 @@
+/* ===================== Scroll to Top Start ================================= */
+
+.back-to-top-wrapper{
+	  position: fixed;
+    inset-inline-end: 40px;
+    inset-block-end: 0;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s 0s ease-out;
+    &.back-to-top-btn-show{
+      visibility: visible;
+      opacity: 1;
+      inset-block-end: 40px;
+    }
+}
+
+.back-to-top-btn{
+    width: 44px;
+    height: 44px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-600);
+    box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
+    color: hsl(var(--heading-color));
+    border-radius: 50%;
+    transition: all 0.3s 0s ease-out;
+    & svg{
+      transform: translateY(-2px);
+      font-weight: 600;
+    }
+    &:hover{
+      transform: translateY(-4px);
+    }
+
+}
+/* ===================== Scroll to Top End ================================= */

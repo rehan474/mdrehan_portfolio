@@ -1,0 +1,41 @@
+
+/*----------------------------------------*/
+/*  2.11 Hover Animation
+/*----------------------------------------*/
+.hover {
+    &__reveal-item {
+        position: relative;
+        &:hover {
+            & .hover {
+                &__reveal-bg {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__reveal-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 346px;
+        height: 406px;
+        opacity: 0;
+        margin: -150px 0 0 -150px;
+        overflow: hidden;
+        pointer-events: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        z-index: 5;
+        border-radius: 8px;
+        @include sm-screen {
+            width: 240px;
+            height: 300px;
+        }
+    }
+}
+
+
+
+

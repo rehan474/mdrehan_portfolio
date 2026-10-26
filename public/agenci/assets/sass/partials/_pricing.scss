@@ -1,0 +1,72 @@
+.pricing-ip {
+    &-switch-wrapper {
+        @include lg-screen {
+            justify-content: left !important;
+        }
+    }
+    &-check {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 6;
+    }
+    &-check:checked ~ .pricing-ip-switch {
+        right: 5px;
+        left: 57.5%;
+        transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transition-property: left, right;
+        transition-delay: 0.08s, 0s;
+    }
+     &-switch {
+        top: 4px;
+        bottom: 4px;
+        left: 5px;
+        right: 57.5%;
+        transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transition-property: left, right;
+        transition-delay: 0s, 0.08s;
+     }
+    &-price{
+        &-parent{
+            & .pricing-ip-toggler {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+           }
+           & .pricing-ip-toggle {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+           }
+        }
+    }
+    &-wrapper{
+        &-full{
+            &.hide{
+                display: none;
+            }
+        }
+    }
+    &-wrap {
+        background: rgba(255, 255, 255, 0.05);
+        margin-block-end: 30px;
+        @include md-screen {
+            padding-inline: var(--size-5);
+        }
+        @include sm-screen {
+            padding-inline: var(--size-11);
+        }
+    }
+    &-subtitle {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 9px 20px;
+        letter-spacing: 0.3em;
+    }
+
+
+}

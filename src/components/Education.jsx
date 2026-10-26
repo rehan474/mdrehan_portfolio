@@ -10,7 +10,7 @@ export default function Education() {
       <Reveal as="h2" className="title">
         Academic history
       </Reveal>
-      <div className="timeline">
+      <div className="journey-layout"><img className="journey-art" src="/agenci/assets/images/new-img/about-3-01.png" alt=""/><div className="timeline">
         {education.map((e) => (
           <Reveal as="div" className="tl-item open static" key={e.degree}>
             <div className="tl-dot" />
@@ -26,7 +26,7 @@ export default function Education() {
             </div>
           </Reveal>
         ))}
-      </div>
+      </div></div>
     </section>
   );
 }

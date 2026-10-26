@@ -1,0 +1,17 @@
+.counter-four {
+    &-wrapper {
+        @include md-screen {
+            flex-wrap: wrap;
+        }
+    }
+    &-title {
+        @include msm-screen {
+            font-size: 6.25rem;
+        }
+    }
+    &-paragraph {
+        background: rgba(234, 77, 35, 0.12);
+        letter-spacing: 0.29em;
+        padding: 3px 16px;
+    }
+}

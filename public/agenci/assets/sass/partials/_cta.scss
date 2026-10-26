@@ -1,0 +1,167 @@
+
+
+.cta {
+    &-button {
+        position: absolute;
+        inset-inline-end: -35px;
+        inset-block-end: 293px;
+        z-index: 2;
+        @include sm-screen {
+            display: none;
+        }
+        & .tw-btn-circle {
+            background: var(--main-600);
+            border-color: transparent;
+            & .tw-btn-circle-dot {
+                background-color: hsl(var(--white)) !important;
+            }
+        }
+        &:hover {
+            & .tw-btn-circle {
+                &-icon {
+                    color: hsl(var(--heading-color));
+                }
+                &-text {
+                    color: hsl(var(--heading-color));
+                }
+            }
+        }
+    }
+}
+
+
+
+.cta-two {
+    &-area {
+        & .counter-title {
+            @include msm-screen {
+                font-size: 4.5rem;
+            }
+        }
+    }
+    &-wrapper {
+        @include xxl-screen {
+            flex-wrap: wrap;
+        }
+    }
+    &-thumb {
+        &.one {
+            @include lg-screen {
+                height: inherit !important;
+            }
+        }
+    }
+    &-icon {
+        @include xxxxl-screen {
+            margin-block-end: 14px;
+        }
+        @include sm-screen {
+            display: none;
+        }
+    }
+    &-arrow {
+        @include xxxxl-screen {
+            margin-block-end: 80px;
+        }
+        @include sm-screen {
+            display: none;
+        }
+    }
+    &-title {
+        @include xxxl-screen {
+            font-size: 4rem;
+        }
+        @include sm-screen {
+            font-size: 3.1rem;
+        }
+        @include msm-screen {
+            color: hsl(var(--white));
+        }
+    }
+    &-sm-title {
+        @include xxxl-screen {
+            font-size: 2.25rem;
+        }
+        @include msm-screen {
+            color: hsl(var(--white));
+        }
+    }
+    &-content {
+        inset-block-end: 50px;
+        inset-inline-start: 50px;
+        @include xl-screen {
+            inset-block-end: 20px;
+            inset-inline-start: 20px;
+        }
+        @include lg-screen {
+            inset-block-end: 40px;
+            inset-inline-start: 40px;
+        }
+        @include msm-screen {
+            position: static !important;
+            margin-inline-end: 0;
+            margin-block-start: 30px;
+        }
+    }
+    &-counter {
+        inset-inline-start: 50px;
+        inset-block-start: 50px;
+    }
+}
+
+
+
+
+
+
+
+.cta-three {
+    &-area {
+        padding-block: 170px 140px;
+        & .tw-btn-circle:hover span {
+            color: hsl(var(--black)) !important;
+        }
+        & .tw-hover-btn-wrapper {
+            @include lg-screen {
+                margin-block-start: 0 !important;
+            }
+        }
+    }
+    &-wrapper {
+        @include sm-screen {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+    }
+    &-shape-1 {
+        inset-block-end: 60px;
+        inset-inline-start: 0;
+    }
+
+}
+
+
+
+
+
+.cta-five {
+    &-thumb {
+        & img {
+            @include lg-screen {
+                width: 100%;
+            }
+        }
+    }
+    &-wrapper {
+        border: 1px solid rgba(255, 255, 255, 0.33);
+        padding: 35px 35px 26px 35px;
+    }
+    &-subtitle {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+    &-number {
+        @include xl-screen {
+            font-size: 2rem;
+        }
+    }
+}

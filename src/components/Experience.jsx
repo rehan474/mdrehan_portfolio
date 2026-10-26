@@ -3,7 +3,7 @@ import { experience } from "../data/content";
 import Reveal from "./Reveal";
 
 function TimelineItem({ item }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   return (
     <Reveal as="div" className={`tl-item ${open ? "open" : ""}`} onClick={() => setOpen(!open)}>
       <div className="tl-dot" />
@@ -39,11 +39,11 @@ export default function Experience() {
       <Reveal as="h2" className="title">
         Professional journey
       </Reveal>
-      <div className="timeline">
+      <div className="journey-layout"><img className="journey-art" src="/agenci/assets/images/new-img/about-3-01.png" alt=""/><div className="timeline">
         {experience.map((item) => (
           <TimelineItem item={item} key={item.title} />
         ))}
-      </div>
+      </div></div>
     </section>
   );
 }

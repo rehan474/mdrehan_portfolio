@@ -1,0 +1,138 @@
+// Home 1 Start
+.portfolio {
+    &-area {
+        padding-block-end: 60px;
+    }
+    &-top-subtitle {
+        margin-inline-start: 30px;
+        @include sm-screen {
+            font-size: 100px;
+        }
+    }
+    &-top-title {
+        margin-block-start: -65px;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.32);
+        @include lg-screen {
+            font-size: 16rem;
+        }
+        @include sm-screen {
+            font-size: 8rem;
+        }
+
+    }
+    &-panel {
+        @include sm-screen {
+            padding: var(--size-8) !important;
+        }
+        @include xsm-screen {
+            padding: var(--size-5) !important;
+        }
+    }
+    &-shape {
+        inset-block-end: 110px;
+        inset-inline-start: 10%;
+        &-arrow {
+            animation: bounce-shape1 3.5s infinite;
+        }
+    }
+    &-wrap {
+        max-width: 537px;
+    }
+    &-title {
+        line-height: 89%;
+        @include msm-screen {
+            font-size: 3rem;
+        }
+    }
+}
+// Home 1 End
+
+
+// Home 3 Start
+.portfolio-three {
+    &-thumb {
+        background: hsl(var(--white));
+        box-shadow: -2px -13px 92px 0 rgba(3, 9, 49, 0.12);
+    }
+}
+// Home 3 End
+
+
+
+// Home Inner Pages Start
+.portfolio-ip {
+    &-thumb {
+        background: rgba(255, 255, 255, 0.12);
+        box-shadow: -2px -13px 92px 0 rgba(3, 9, 49, 0.12);
+    }
+}
+// Home Inner Pages End
+
+
+
+// portfolio carousel Pages End
+.portfolio-carousel {
+    &-area  {
+        @include md-screen {
+            padding-block-start: 120px;
+        }
+        & .panels-four-container {
+            @include md-screen {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        & .project-four-wrapper {
+            @include msm-screen {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+    &-thumb {
+        & img {
+            width: 100%;
+            object-fit: cover;
+            @include xxxxxl-screen {
+                height: 500px;
+            }
+        }
+    }
+}
+// portfolio carousel Pages End
+
+
+
+
+
+// Carousel Inner Pages Start
+// .grid-sizer,
+// .grid-item {
+//   width: 25%; /* default column width (4 columns) */
+//   height: 587px;
+// }
+// .gutter-sizer {
+//   width: 2%; /* space between items */
+// }
+// .grid-item--width2 {
+//   width: 50%;
+// }
+// .grid-item--width3 {
+//   width: 100%;
+// }
+
+
+.portfolio-masonary {
+    &-wrapper img {
+        width: 100%;
+        height: 587px;
+        @include msm-screen {
+            height: 400px;
+        }
+
+    }
+}
+
+
+// Carousel Inner Pages End

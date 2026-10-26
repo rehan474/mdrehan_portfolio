@@ -1,0 +1,214 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: #fff !important;
+
+  a {
+    background-image: linear-gradient(180deg, #fff 0%, #fff 100%) !important;
+  }
+}
+
+p {
+     color: #fff !important;
+}
+
+a {
+     color: #fff !important;
+}
+
+.mona-sans-main {
+ color: #fff !important;
+}
+
+.testimonial-card-style {
+    p,h3,span {
+        color: #000 !important;
+    }
+}
+
+.team-section .sub-title {
+    color: #fff !important;
+}
+
+.service-section-new-1 .sub-title {
+    color: #fff !important;
+}
+
+.sub-title {
+    color: #fff !important;
+}
+
+.service-box-style-4 {
+    p,h3 {
+        color: #000 !important;
+    }
+}
+
+.about-section-new-2 .top-itemss-2 span {
+    color: #fff !important;
+}
+
+.filters-none img {
+    filter: brightness(0) invert(1) !important;
+}
+
+.feature-top-wrapper .feature-left-cont span {
+    color: #fff !important;
+}
+
+.service-main-card-items-2 .left-item .left-content {
+    background: #000 !important;
+}
+
+.service-main-card-items-2 .left-item .left-content .service-list li {
+    color: #fff !important;
+}
+
+.service-main-card-items-2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-main-card-items-2 .left-item span {
+    color: #fff !important;
+}
+
+.project-bg-thumb-wrapper .project-bg-bottom .project-btn:hover {
+    color: #000 !important;
+    z-index: 999;
+}
+
+.working-process-wrapper .working-process-content span {
+    color: rgba(255, 255, 255, 0.16);
+
+    &:hover {
+        color: #fff !important;
+    }
+}
+
+.working-process-section .top-image-item-2 img {
+    filter: brightness(0) invert(1) !important;
+}
+
+.brand-two-area {
+    background-color: #000 !important;
+}
+
+.portfolio-three-wrapper a {
+    background-image: initial !important;
+}
+
+.feature-three-area {
+    background-color: rgb(24, 24, 27);
+}
+
+.skill-three-area {
+    background-color: rgb(24, 24, 27);
+}
+
+.feature-three-wrap a {
+    background-image: initial !important;
+}
+
+.text-heading {
+    color: #fff !important;
+}
+
+.skill-three-wrapper {
+    background-color: #000 !important;
+}
+
+.resume-three-wrapper {
+    background-color: rgb(24, 24, 27) !important;
+}
+
+
+.testimonial-three-paragraph {
+    color: #000 !important;
+}
+
+.testimonial-three-title {
+    color: #000 !important;
+}
+
+.testimonial-three-sm-paragraph {
+    color: #000 !important;
+}
+
+.rounded-circle {
+    background: #000 !important;
+}
+
+.blog-three-wrapper {
+    background-color: rgb(24, 24, 27) !important;
+}
+
+.blog-wrapper a {
+    background-image: initial !important;
+}
+
+.text-body {
+    color: #fff !important;
+}
+
+.faq-three-area  {
+    background-color: rgb(24, 24, 27);
+}
+
+.accordion-button {
+    color: #fff !important;
+}
+
+.faq-three-accordion-button:not(.collapsed) {
+    background: transparent !important;
+}
+
+.mega-menu-item {
+    .theme-btn {
+        color: #000 !important;
+    }
+}
+
+.header-eight  {
+    .nav-submenu__item {
+        a {
+            color: #000 !important;
+
+            &:hover {
+                color: #B3DE4F !important;
+            }
+        }
+    }
+}
+
+.banner-three-wrapper {
+    h2 {
+        color: #000 !important;
+    }
+
+    .banner-three-right {
+        p {
+             color: #000 !important;
+
+             span {
+                 color: #000 !important;
+             }
+        }
+    }
+}
+
+.header-three  {
+    .header-two-call  {
+        a {
+            color: #000 !important;
+        }
+    }
+
+    .header-three-toggole  {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}

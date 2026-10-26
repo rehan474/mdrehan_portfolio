@@ -1,0 +1,16 @@
+.resume-three {
+    &-wrapper {
+        box-shadow: -2px -13px 92px 0 rgba(3, 9, 49, 0.08);
+        @include lg-screen {
+            padding-inline: var(--size-10);
+        }
+    }
+    &-title {
+        @include md-screen {
+            margin-inline-start: 0;
+        }
+        @include sm-screen {
+            font-size: 3rem;
+        }
+    }
+}

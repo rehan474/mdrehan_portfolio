@@ -1,0 +1,35 @@
+// Home 1 Start
+.maquee {
+     &-area {
+          padding: 25px 0;
+     }
+     &-transition {
+          transition-timing-function: linear;
+     }
+     &-icon {
+        transform: translate(-10px);
+          & span {
+               animation: rotate-infinte 6s infinite linear;
+          }
+     }
+     &-title {
+          &.border-text {
+               -webkit-text-stroke-width: 1px;
+               color: transparent !important;
+               -webkit-text-stroke-color: hsl(var(--white));
+          }
+     }
+}
+// Home 1 End
+
+
+// Home 2 Start
+.maquee-two {
+     &-area {
+          padding-block: 50px 37px;
+     }
+     &-title {
+          -webkit-text-stroke-color: hsl(var(--black)) !important;
+     }
+}
+// Home 2 End

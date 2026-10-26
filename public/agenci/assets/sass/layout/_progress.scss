@@ -1,0 +1,37 @@
+.progress-container, .progress {
+    background-color: #dce0ee;
+    border-radius: 5px;
+    position: relative;
+    height: 7px;
+    width: 100%;
+}
+.progress {
+     width: 0;
+     height: 7px;
+     top: 50%;
+     left: 0;
+     transition: 0.8s linear;
+     transform: translateY(-50%);
+     background-color: #FEB81B;
+     &.two {
+        background-color: var(--main-four-600);
+     }
+}
+.progress.active {
+    width: 0 !important;
+}
+.percentage {
+  color: hsl(var(--heading-color));
+  font-size: 18px;
+  padding: 4px;
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: 50px;
+  text-align: center;
+  transition: 0.8s linear;
+  font-weight: 700;
+}
+.progress.active, .percentage.active {
+    inset-inline-start: 0 !important;
+}

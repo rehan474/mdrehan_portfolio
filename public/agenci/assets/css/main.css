@@ -102,12 +102,523 @@
 
    ================================== Css table of contents End======================================== */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/satoshi");
-@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-@import url("https://fonts.cdnfonts.com/css/satoshi");
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/cfc1ad02e91c1f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/e8f4f237d14eb9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/acdf0c64fdcf14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/abd281d0dad143.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/f3a0eb876d546f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/ac0bffb8676d0c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/da92c6a83bd047.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/85e0e8e4a47ba7.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/981d8432eb23e8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/da69e5d9e9576d.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/2d5523b07e76b5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/ee9558be9f8a4d.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/a699af1dea30b7.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/e45972c7e9f24d.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/87e867b52640b3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/6f49e1b28bce73.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/2f6c206f7c7441.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/861da2b4255e09.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Satoshi'), url('../fonts/d72365297be725.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Satoshi'), url('../fonts/9147960823fa66.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Satoshi'), url('../fonts/2534f89b5a0499.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Satoshi'), url('../fonts/980602aaf0252f.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Satoshi'), url('../fonts/dfe84452052b1f.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Satoshi'), url('../fonts/fdc1ba17378da2.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Satoshi'), url('../fonts/d91641d70deca7.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Satoshi'), url('../fonts/51bc61af9ee81b.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Satoshi'), url('../fonts/873924517c2448.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Satoshi'), url('../fonts/8cae437c58044c.woff') format('woff');
+}
+
+
+
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/e3456097382424.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/55f4dc0338eab1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/3f7783a9274e24.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/f05d73cb31c1ca.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/57b5d4ae953d73.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/f4cd54d4eadb9f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/24cd87f0f7c4c0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/a4826581a0fe29.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/afbabc493862ee.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/7dd4cb594ba2ff.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/8b671e0bc5a1bb.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/be5810aad11a60.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/f494923440e88f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/77501d0ee1a66e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/936e5773162621.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/8fed886c0b053e.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/f4e8a65e4dc0d7.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/bd3286149a123f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/9ca12861e40c8a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/24ba74e1b36dbe.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/1d1b2dc337b4f0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/0348c5b8c30607.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/70e074455d6b9e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/e7f62cb72d6696.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/190e13314888e7.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/fe5eb4d77e035c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/21353ee092ca5f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/86b5709fc72608.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/0569c822cab6c5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/9bd8ba39c9d55e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/18e69125ce1f96.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/8257aa2626c379.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/613415ecf5833c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/13523a93dcccf1.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/592c5d8fa63597.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Satoshi'), url('../fonts/d72365297be725.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Satoshi'), url('../fonts/9147960823fa66.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Satoshi'), url('../fonts/2534f89b5a0499.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Satoshi'), url('../fonts/980602aaf0252f.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Satoshi'), url('../fonts/dfe84452052b1f.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Satoshi'), url('../fonts/fdc1ba17378da2.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Satoshi'), url('../fonts/d91641d70deca7.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Satoshi'), url('../fonts/51bc61af9ee81b.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Satoshi'), url('../fonts/873924517c2448.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Satoshi'), url('../fonts/8cae437c58044c.woff') format('woff');
+}
+
+
+
 @font-face {
   font-family: "Mango Grotesque";
   src: url("../fonts/mango-grotesque.ttf") format("opentype");

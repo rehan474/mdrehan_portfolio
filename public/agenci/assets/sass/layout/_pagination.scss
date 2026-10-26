@@ -1,0 +1,33 @@
+// pagination widget
+.widget-pagination {
+  & ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    & li {
+        cursor: pointer;
+        transition: .4s;
+        border-radius: 50% !important;
+        & i {
+            font-size: 18px;
+        }
+        & a {
+            width: 56px;
+            height: 56px;
+            line-height: 1;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid hsl(var(--white));
+            background: transparent;
+            color: hsl(var(--white));
+            border-radius: 50% !important;
+            &:hover {
+                background: var(--main-600);
+                color: hsl(var(--heading-color));
+                border: 1px solid var(--main-600);
+            }
+        }
+    }
+  }
+}

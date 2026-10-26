@@ -24,7 +24,7 @@ export default function Reveal({ as: Tag = "div", className = "", children, ...r
   }, []);
 
   return (
-    <Tag ref={ref} className={`reveal ${inView ? "in" : ""} ${className}`} {...rest}>
+    <Tag ref={ref} className={`portfolio-reveal ${inView ? "in" : ""} ${className}`} {...rest}>
       {children}
     </Tag>
   );

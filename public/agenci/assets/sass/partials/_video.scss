@@ -1,0 +1,176 @@
+// Home 1 Start
+.video {
+    &-area {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            background: rgba(7, 7, 19, 0.54);
+            z-index: -1;
+        }
+    }
+    &-button-wrap {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(60.0999984741px);
+        width: 169px;
+        border: 1px solid rgba(255, 255, 255, 0.27);
+        border-radius: 0 0 94px 94px;
+        border-top: 0;
+        padding-block-end: 16px;
+        height: 324px;
+    }
+    &-button {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 50%;
+        transform: translateX(-50%);
+    }
+    &-content {
+        max-width: 796px;
+        width: 100%;
+    }
+    &-title {
+        @include sm-screen {
+            font-size: 4.5rem;
+        }
+    }
+    &-arrow-shape {
+        inset-block-end: -18%;
+        &-animate {
+            animation: bounce-y 3.5s forwards infinite alternate;
+        }
+    }
+}
+// Home 1 End
+
+
+
+
+.video-five {
+    &-button {
+        &::before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 70%;
+            height: 70%;
+            background-color: rgba(255, 166, 0, 0.471);
+            animation: borderanimate2 2s linear infinite;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 90%;
+            height: 90%;
+            transform: scale(1.5);
+            border: 1px solid rgba(255, 166, 0, 0.471);
+            animation: borderanimate2 2s linear infinite;
+            border-radius: 50%;
+        }
+    }
+    &-bg {
+        border-radius: 10px 0 0 10px;
+        object-fit: cover;
+        @include xxxxxl-screen {
+            width: 1520px;
+        }
+        @include xxxxl-screen {
+            width: 1430px;
+        }
+        @include xxxl-screen {
+            width: 1230px;
+        }
+        @include xl-screen {
+            width: 1030px;
+        }
+        @include lg-screen {
+            width: 820px;
+        }
+        @include md-screen {
+            width: 730px;
+        }
+        @include sm-screen {
+            width: 535px;
+        }
+        @include msm-screen {
+            width: 385px;
+        }
+    }
+    &-text-shape {
+        inset-block-start: 0;
+        inset-inline-start: 40px;
+    }
+    &-shape {
+        &-1 {
+            inset-inline-start: -115px;
+            @include msm-screen {
+                display: none;
+            }
+        }
+        &-2 {
+            inset-inline-end: 9%;
+            inset-block-end: -10%;
+            @include sm-screen {
+                inset-inline-end: -5%;
+                inset-block-end: -2%;
+            }
+            @include msm-screen {
+                display: none;
+            }
+
+        }
+    }
+    // video bottom
+    &-bottom {
+        &-area {
+            padding-block: 495px 140px;
+            margin-block-start: -380px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 84%;
+                height: 100%;
+                inset-block-start: 0;
+                inset-inline-start: 0;
+                background: var(--main-seven-600);
+                z-index: -1;
+                @include xxxl-screen {
+                    width: 90%;
+                }
+                @include xl-screen {
+                    width: 94%;
+                }
+                @include sm-screen {
+                    width: 100%;
+                }
+
+            }
+        }
+        &-paragraph {
+            @include sm-screen {
+                width: 382px;
+            }
+        }
+    }   
+    &-knob-progress {
+        max-width: 186px;
+        width: 186px;
+        height: 186px;
+        & input {
+            inset-block-start: 0;
+            inset-inline-start: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+}
+
+

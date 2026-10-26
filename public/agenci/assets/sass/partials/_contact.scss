@@ -1,0 +1,123 @@
+.contact {
+    &-area {
+        padding-block: 320px 140px;
+        margin-block: -360px 0;
+    }
+    &-top-rigght {
+       	text-align: right;
+	    margin-block-start: -40px;
+    }
+    &-shape {
+        inset-block-end: 16%;
+        inset-inline-end: 3%;
+        animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
+    }
+
+}
+
+
+
+
+.contact-two {
+    &-area {
+        & .tw-hover-btn-item {
+            &:hover {
+                & .tw-btn-circle-icon {
+                    color: hsl(var(--heading-color)) !important;
+                }
+                & .tw-btn-circle-text {
+                    color: hsl(var(--heading-color)) !important;
+                }
+            }
+        }
+    }
+    &-title {
+        @include xl-screen {
+            font-size: 6.5rem;
+        }
+        @include sm-screen {
+            font-size: 4.5rem;
+        }
+    }
+}
+
+
+
+
+.contact-five {
+    &-area {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1605px;
+            height: 682px;
+            border: 1px solid rgba(255, 255, 255, 0.21);
+            border-radius: 12px 0 0 12px;
+            inset-block-end: -25px;
+            inset-inline-end: 0;
+            background: #1b134a;
+            z-index: -1;
+            border-right: none;
+            @include xxxxxl-screen {
+                width: 1490px;
+            }
+            @include xxxxl-screen {
+                width: 1440px;
+            }
+            @include xxxl-screen {
+                width: 1340px;
+            }
+            @include xl-screen {
+                width: 1150px;
+                height: 640px;
+            }
+            @include lg-screen {
+                width: 965px;
+                height: 700px;
+            }
+        }
+    }
+    &-thumb {
+        @include lg-screen {
+            margin-block-end: 70px;
+        }
+    }
+    &-wrapper {
+        margin-inline-start: -10px;
+    }
+    &-title {
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px #fff;
+        @include md-screen {
+            font-size: 6.25rem;
+        }
+        @include sm-screen {
+            font-size: 4.25rem;
+        }
+        @include msm-screen {
+            font-size: 3.25rem;
+        }
+    }
+    &-bg {
+        z-index: -2;
+        & img {
+            border-radius: 0 12px 12px 0;
+        }
+    }
+    &-shape {
+        &-1 {
+            inset-block-start: 40px;
+            inset-inline-end: 80px;
+            animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
+        }
+        &-2 {
+            inset-block-end: -22%;
+            inset-inline-start: 6%;
+            @include msm-screen {
+                display: none;
+            }
+        }
+    }
+}

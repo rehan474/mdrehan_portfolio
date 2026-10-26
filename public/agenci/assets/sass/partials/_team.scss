@@ -1,0 +1,117 @@
+.team {
+    &-top-img {
+        animation: moving 7s linear infinite;
+    }
+    &-wrapper {
+        border-radius: 160px;
+        &:hover {
+            & .team-wrap {
+                inset-block-end: -80px;
+                @include lg-screen {
+                   inset-block-end: 0;
+                }
+                @include sm-screen {
+                   inset-block-end: -90px;
+                }
+            }
+        }
+    }
+    &-wrap {
+        position: absolute;
+        inset-block-end: -350px;
+        inset-inline-start: -18px;
+        transition: 0.4s;
+        @include xl-screen {
+            inset-inline-start: -40px;
+        }
+        @include lg-screen {
+            inset-inline-start: 50px;
+        }
+        @include md-screen {
+            inset-inline-start: -4px
+        }
+        @include sm-screen {
+            inset-inline-start: -50px;
+        }
+        @include msm-screen {
+            inset-inline-start: 28px;
+        }
+    }
+    &-content {
+        background: hsl(var(--black));
+        border-radius: 50%;
+        width: 342px;
+        height: 342px;
+    }
+    &-traslate {
+        transform: translateY(70px);
+    }
+}
+
+
+
+
+
+
+.team-four {
+    &-wrapper {
+        @include xl-screen {
+            margin-block-end: 30px;
+        }
+    }
+}
+
+
+
+
+.team-five {
+    &-thumb {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+                transition: 0.7s;
+                transform: scale(1);
+                object-fit: cover;
+            }
+        }
+        &:hover {
+            & img {
+                transform: scale(1.3);
+            }
+        }
+    }
+    &-social {
+        border-bottom: 1px solid #696979;
+        & li a {
+            border: 1px solid rgba(255, 255, 255, 0.20);
+        }
+    }
+}
+
+
+
+
+.team-details {
+    &-thumb {
+        @include lg-screen {
+            text-align: center;
+        }
+        
+    }
+    &-wrapper {
+        @include sm-screen {
+            margin-inline-start: 0;
+        } 
+    }
+    &-form {
+        & input {
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+        }
+        & textarea {
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+        }
+    }
+}

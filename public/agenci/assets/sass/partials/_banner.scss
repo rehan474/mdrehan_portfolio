@@ -1,0 +1,582 @@
+// Home 1 Start
+.banner {
+    &-area {
+        padding-block: 260px 267px;
+        @include xxl-screen {
+            padding-block: 200px 267px;
+        } 
+        @include lg-screen {
+            padding-block: 160px 200px;
+        } 
+        @include md-screen {
+            padding-block: 240px 200px;
+        } 
+    }
+    &-wrapper {
+        @include lg-screen {
+            margin-block-end: 60px;
+        } 
+    }
+    &-content {
+        inset-block-end: -174px;
+        inset-inline-end: 66px;
+        @include md-screen {
+           inset-block-start: -80px;
+        } 
+    }
+    &-title {
+        font-size: 190px;
+        line-height: 54%;
+        @include sm-screen {
+            font-size: 170px;
+        } 
+        @include msm-screen {
+              font-size: 120px;
+        } 
+        & span {
+            font-weight: 600;
+            font-size: 333px;
+            line-height: 104%;
+            @include sm-screen {
+                 font-size: 240px;
+            } 
+            @include msm-screen {
+                font-size: 148px;
+            } 
+
+        }
+        &-sticker {
+            inset-block-start: -75px;
+            inset-inline-end: -16px;
+            @include sm-screen {
+                inset-block-start: -62px;
+                inset-inline-end: -30px;
+            } 
+            @include msm-screen {
+                display: none;
+            } 
+        }
+    }
+    &-circle {
+        position: relative;
+        width: 161px;
+        height: 161px;
+        line-height: 1;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--main-600);
+        border-radius: 50%;
+        z-index: 1;
+        margin-bottom: 40px;
+        &-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 125px;
+            height: 125px;
+            line-height: 1;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid rgba(93, 50, 34, 0.1);
+            & span {
+                font-size: 55px;
+            }
+        }
+    }
+    &-rotate {
+        &-content {
+             animation: rotateImg 10s infinite linear;
+        }
+        &-text {
+             position: relative;
+             z-index: 1;
+        }
+    }
+    &-arrow {
+        &-shape {
+            inset-inline-start: 140px;
+            inset-block-start: 41%;
+        }
+        &-animation {
+            animation: bounce-shape1 3.50s infinite;
+        }
+    }
+    &-bottom-wrap {
+        margin-block-end: -96px;
+    }
+    &-siteber {
+        background: #242524;
+        padding-block: 31px;
+        rotate: -90deg;
+        transform: translateY(-50%);
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-start: -455px;
+        z-index: 1;
+        padding-inline: 301px;
+        @include xxxxl-screen {
+            display: none;
+        }        
+        &-position {
+            transform: translateX(50px);
+        }
+    }
+    &-review-content {
+        inset-block-end: -10px !important;
+        @include sm-screen {
+            inset-block-end: -55px !important;
+        }  
+    }
+}
+
+.container-1719 {
+    max-width: 1719px;
+}
+
+.container-1783 {
+    max-width: 1783px;
+}
+
+
+// Home 2 Start
+.banner-two {
+    &-area {
+        padding-block: 235px 0;
+    }
+    &-cercal {
+        background: rgba(255, 255, 255, 0.12);
+        @include sm-screen {
+            display: none !important;
+        }
+    }
+    &-title {
+        font-size: 288px;
+        line-height: 88%;
+        @include lg-screen {
+            font-size: 260px;
+            line-height: 68%;
+        }
+        @include msm-screen {
+            font-size: 200px;
+            line-height: 68%;
+        }
+        & span {
+            font-size: 318px;
+            @include xxxl-screen {
+                font-size: 300px;
+            }
+            @include xxl-screen {
+                font-size: 257px;
+            }
+            @include lg-screen {
+                font-size: 218px;
+            }
+            @include msm-screen {
+                font-size: 178px;
+            }
+            @include xsm-screen {
+                font-size: 156px;
+            }
+        }
+    }
+    &-wrap {
+        @include lg-screen {
+            margin-block-end: 0;
+        }
+    }
+    &-img {
+        text-align: right;
+        margin-inline-end: -30px;
+        @include lg-screen {
+            margin-inline-end: -400px;
+        }
+        @include sm-screen {
+            margin-inline-end: -200px;
+        }
+        @include msm-screen {
+            margin-inline-end: -40px;
+        }
+        & img {
+            @include msm-screen {
+                width: 42%;
+            }
+        }
+
+    }
+    &-bg {
+        margin-block-start: -115px;
+    }
+    &-bg-shape {
+        &-1 {
+            inset-block-start: 295px;
+            inset-inline-start: 0;
+            @include xxxl-screen {
+               inset-block-start: 130px;
+            }
+            @include sm-screen {
+               display: none;
+            }
+        }
+        &-2 {
+            inset-block-start: 520px;
+            inset-inline-start: 55px;
+            @include lg-screen {
+                inset-inline-start: auto;
+                inset-inline-end: 55px;
+            }
+            @include sm-screen {
+               display: none;
+            }
+        }
+    }
+}
+// Home 2 End
+
+
+
+
+
+// Home 3 Start
+.banner-three {
+    &-area {
+        padding-block: 324px 480px;
+        @include lg-screen {
+            padding-block: 140px 260px;
+        }
+        @include msm-screen {
+            padding-block: 140px 200px;
+        }
+        & .tw-hover-btn-wrapper {
+            @include lg-screen {
+                margin-block-start: 0 !important;
+            }
+        }
+    }
+    &-wrapper {
+        @include lg-screen {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include sm-screen {
+            flex-wrap: wrap;
+        }
+    }
+    &-left {
+        max-width: 410px;
+        width: 100%;
+        @include lg-screen {
+            max-width: 700px;
+            text-align: center;
+        }
+        & h2 {
+            @include lg-screen {
+                font-size: 5.875rem;
+            }
+            @include msm-screen {
+                font-size: 3.875rem;
+            }
+            @include xsm-screen {
+                font-size: 3.5rem;
+            }
+        }
+    }
+    &-right {
+        max-width: 384px;
+        width: 100%;
+    }
+    &-arrow-btn {
+        margin-inline-start: -40px;
+    }
+    &-wrap {
+        backdrop-filter: blur(14px);
+        background: rgba(76, 76, 76, 0.06);
+    }
+    &-title {
+        font-size: 400px;
+        line-height: 80%;
+        padding-block-start: 59px;
+        @include xxxxl-screen {
+            font-size: 375px;
+        }
+        @include xxxl-screen {
+            font-size: 330px;
+        }
+        @include xxl-screen {
+            font-size: 280px;
+        }
+        @include lg-screen {
+            font-size: 180px;
+        }
+        @include sm-screen {
+            font-size: 135px;
+        }
+        @include msm-screen {
+           font-size: 100px;
+        }
+        @include xsm-screen {
+           font-size: 88px;
+        }
+    }
+    &-arrow {
+        inset-block-start: 12px;
+        inset-inline-start: -239px;
+        transform: translateY(-50%);
+    }
+    &-shape {
+        inset-block-end: -150px;
+        inset-inline-end: -57px;
+        @include xl-screen {
+            display: none;
+        }
+    }
+    &-thumb {
+        @include lg-screen {
+            display: none;
+        }
+    }
+}
+// Home 3 End
+
+
+
+
+
+// Home 4 Start
+.banner-four {
+    &-area {
+        padding-block: 302px 0;
+        @include lg-screen {
+            padding-block: 280px 0;
+        }
+    }
+    &-title {
+        font-size: 340px;
+        @include xxxxl-screen {
+            font-size: 320px;
+        }
+        @include xxxl-screen {
+            font-size: 280px;
+        }
+        @include xl-screen {
+            font-size: 236px;
+        }
+        @include lg-screen {
+            font-size: 200px;
+        }
+        @include md-screen {
+            font-size: 160px;
+        }
+        @include sm-screen {
+            font-size: 120px;
+        }
+        @include msm-screen {
+            font-size: 84px;
+        }
+        @include xsm-screen {
+            font-size: 84px;
+            transform: translateY(-73px);
+        }
+        & > span {
+            font-size: 450px;
+            margin-inline-end: -40px;
+            transform: translateY(-165px);
+            @include xxxxl-screen {
+                font-size: 440px;
+            }
+            @include xxxl-screen {
+                font-size: 390px;
+            }
+            @include xl-screen {
+                font-size: 340px;
+            }
+            @include lg-screen {
+                font-size: 262px;
+                transform: translateY(-130px);
+            }
+            @include md-screen {
+                font-size: 190px;
+            }
+            @include sm-screen {
+                font-size: 154px;
+            }
+            @include msm-screen {
+                font-size: 130px;
+                transform: translateY(-73px);
+            }
+            @include xsm-screen {
+                font-size: 90px;
+                transform: translateY(-73px);
+            }
+        }
+    }
+    &-circle {
+        position: absolute;
+        inset-inline-start: 48%;
+        inset-block-start: 60px;
+        transform: translateX(-50%);
+        background: var(--main-five-600);
+        border: 3px solid hsl(var(--white));
+        width: 164px;
+        height: 164px;
+        @include lg-screen {
+            inset-block-start: -50px;
+        }
+        @include sm-screen {
+            inset-block-start: -96px;
+            inset-inline-start: 55%;
+        }
+        @include msm-screen {
+            inset-block-start: -123px;
+            inset-inline-start: 74%;
+        }
+        @include xsm-screen {
+            display: none;
+        }
+
+    }
+    &-description {
+        inset-block-start: -38px;
+        inset-inline-start: 60%;
+        transform: translateX(-50%);
+        @include xl-screen {
+            inset-inline-start: 66%;
+        }
+        @include lg-screen {
+            inset-inline-start: 69%;
+            inset-block-start: -130px;
+        }
+        @include md-screen {
+            inset-inline-start: 68%;
+        }
+        @include sm-screen {
+            inset-inline-start: 72%;
+            inset-block-start: -190px;
+        }
+        @include msm-screen {
+            display: none;
+        }
+        & p {
+            @include md-screen {
+                width: 450px;
+            }
+            @include sm-screen {
+                width: 320px;
+            }
+        }
+    }
+    &-rel {
+        inset-block-start: -168px;
+        inset-inline-end: 0;
+        @include md-screen {
+            display: none;
+        }
+    }
+    &-bg {
+        margin-block-start: -235px;
+    }
+}
+// Home 4 End
+
+
+
+// Home 5 Start
+.banner-five {
+    &-area {
+        padding-block: 175px 140px;
+    }
+    &-wrapper {
+        @include sm-screen {
+            flex-wrap: wrap;
+            gap: var(--size-10);
+        } 
+    }
+    &-title {
+        line-height: 104%;
+        letter-spacing: -0.04em;
+        font-weight: 900;
+        max-width: 900px;
+        width: 100%;
+        @include xxl-screen {
+            font-size: 7.25rem;
+        } 
+        @include xl-screen {
+            max-width: 740px;
+        } 
+        @include lg-screen {
+            font-size: 5rem;
+            max-width: 730px;
+        } 
+        @include md-screen {
+            font-size: 4.2rem;
+        } 
+        @include msm-screen {
+            font-size: 3.2rem;
+        } 
+
+    }
+    &-review {
+        @include xxl-screen {
+            flex-wrap: wrap;
+            gap: var(--size-5);
+            margin-inline-start: -100px;
+        } 
+        @include lg-screen {
+            margin-inline-start: 0;
+            margin-block-end: 40px;
+        } 
+    }
+    &-content {
+        border-radius: 14px 14px 0 14px;
+        inset-block-start: -100px;
+        inset-inline-end: 156px;
+        background-size: contain !important;
+        height: inherit;
+        @include xxl-screen {
+            inset-block-start: -50px;
+            inset-inline-end: 20px;
+        } 
+        @include md-screen {
+            display: none;
+        } 
+    }
+    &-counter {
+        &-wrap {
+            margin-inline-start: 30px;
+            margin-block-start: -60px;
+            @include md-screen {
+                display: none;
+            } 
+            @include sm-screen {
+                flex-wrap: wrap;
+            } 
+        }
+        &-item {
+            border-radius: 10px 10px 0 0;
+            @include sm-screen {
+                margin-inline-start: 0;
+                margin-block-start: 30px;
+                flex-wrap: wrap;
+            } 
+            @include sm-screen {
+                padding-inline-end: var(--size-10);
+                border-radius: 10px;
+            } 
+            @include msm-screen {
+                padding-inline: var(--size-5);
+            } 
+            &.blue {
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(25px);
+                border: 1px solid rgba(255, 255, 255, 0.32);
+            }
+        }
+    }
+}
+// Home 5 End
+
+
+

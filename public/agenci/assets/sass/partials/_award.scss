@@ -1,0 +1,30 @@
+.award-four {
+    &-area {
+        margin-block-start: -275px;
+        @include xxxl-screen {
+            padding-inline: 0;
+        }
+    }
+    &-bg {
+        border: 5px solid hsl(var(--white));
+    }
+    &-thumb {
+        inset-inline-start: 0;
+        inset-block-start: 200px;
+        @include lg-screen {
+            position: static !important;
+            margin-block-start: 50px;
+        }
+        & img {
+            @include xl-screen {
+                width: 500px;
+	            height: 500px;
+            }
+        }
+    }
+    &-content {
+        @include lg-screen {
+            margin-block-start: var(--size-14);
+        }
+    }
+}

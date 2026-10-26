@@ -1,0 +1,64 @@
+.feature-two {
+    &-area {
+        @include md-screen {
+            padding-block-start: 100px;
+        }
+    }
+    &-content {
+        @include xl-screen {
+            flex-wrap: wrap;
+        }
+        @include md-screen {
+            margin-block-end: var(--size-2);
+        }
+    }
+    &-title {
+        @include xl-screen {
+            font-size: 40px;
+        }
+    }
+}
+
+
+
+
+.feature-three {
+    &-area {
+        background: rgba(16, 83, 243, 0.05);
+    }
+    &-thumb {
+        margin-inline-start: -90px;
+        @include xxl-screen {
+            margin-inline-start: 0;
+        }
+        @include md-screen {
+            margin-block-end: 30px;
+        }
+
+    }
+}
+
+
+
+
+
+.feature-five {
+    &-wrapper {
+        margin-block-end: 30px;
+        @include md-screen {
+            padding-inline-end: 0;
+        }
+    }
+    &-top {
+        @include md-screen {
+            flex-wrap: wrap;
+        }
+    }
+} 
+
+
+.feature-ip {
+    &-icon img {
+        filter: brightness(2) invert(1);
+    }
+}
