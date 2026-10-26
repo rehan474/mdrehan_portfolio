@@ -12,7 +12,16 @@ export async function startTemplateMotion() {
  }
  document.dispatchEvent(new Event('agenci-ready'));
  await document.fonts.ready;
- await Promise.all(Array.from(document.images).map(img => img.complete ? Promise.resolve() : new Promise(resolve => { img.addEventListener('load',resolve,{once:true}); img.addEventListener('error',resolve,{once:true}); })));
+ const refresh = () => { window.ScrollTrigger?.refresh(); window.AOS?.refresh(); };
+ // Lazy images must not block refresh until every lower section has been visited.
+ document.querySelectorAll('img').forEach(img => {
+  if (!img.complete) { img.addEventListener('load',refresh,{once:true}); img.addEventListener('error',refresh,{once:true}); }
+ });
+ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.legacy .portfolio-reveal').forEach(el => {
+   window.gsap?.from(el, {y:24, duration:.65, ease:'power2.out', scrollTrigger:{trigger:el,start:'top 92%',once:true}});
+  });
+ }
  window.ScrollTrigger?.refresh();
  window.AOS?.refresh();
  document.documentElement.classList.add('motion-ready');

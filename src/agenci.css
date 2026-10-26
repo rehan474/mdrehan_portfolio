@@ -26,15 +26,15 @@
 
 .mobile-menu__logo{display:block;margin-bottom:36px}.mobile-menu .nav-menu__link{display:block;padding-block:16px}.mobile-menu .close-button{padding:10px}.legacy #education .journey-art{opacity:.85}
 
-.core-skills-ribbon{overflow:hidden;padding:46px 0;border-block:1px solid #ffffff26;color:#fff;background:#000}.core-skills-track{display:flex;width:max-content;animation:core-skills-slide 48s linear infinite;will-change:transform}.core-skills-group{display:flex;flex:none;align-items:center}.core-skill{display:flex;align-items:center;gap:38px;padding-right:38px;white-space:nowrap;font-family:'Satoshi',sans-serif;font-size:clamp(24px,3vw,44px);font-weight:500}.skill-divider{font-size:.75em;color:#c2df93}.core-skills-ribbon:hover .core-skills-track{animation-play-state:paused}@keyframes core-skills-slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(max-width:600px){.core-skills-ribbon{padding:30px 0}.core-skill{gap:24px;padding-right:24px}}@media(prefers-reduced-motion:reduce){.core-skills-track{animation:none}.core-skills-ribbon{overflow-x:auto}}
+.core-skills-ribbon{overflow:hidden;padding:46px 0;border-block:1px solid #ffffff26;color:#fff;background:#000}.core-skills-track{display:flex;width:max-content;animation:core-skills-slide 48s linear infinite;will-change:transform}.core-skills-group{display:flex;flex:none;align-items:center}.core-skill{display:flex;align-items:center;gap:38px;padding-right:38px;white-space:nowrap;font-family:'Satoshi',sans-serif;font-size:clamp(24px,3vw,44px);font-weight:500}.skill-divider{font-size:.75em;color:#ff6a3a}.core-skills-ribbon:hover .core-skills-track{animation-play-state:paused}@keyframes core-skills-slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(max-width:600px){.core-skills-ribbon{padding:30px 0}.core-skill{gap:24px;padding-right:24px}}@media(prefers-reduced-motion:reduce){.core-skills-track{animation:none}.core-skills-ribbon{overflow-x:auto}}
 
 /* Keep website screenshots inside the template card frame and hover layers. */
 .new-project-wrapper-3 .project-thumb-items{height:clamp(480px,41vw,710px)}
 .new-project-wrapper-3 .project-thumb-items > .hover-img{object-position:top center}
 @media(max-width:991px){.new-project-wrapper-3 .project-thumb-items{height:550px}}
 
-/* Monochrome navigation states across desktop and off-canvas menus. */
-.header .nav-menu__link:hover,.header .nav-menu__link:focus-visible,.header .nav-menu__item.activePage>a,.mobile-menu .nav-menu__link:hover,.mobile-menu .nav-menu__link:focus-visible,.portfolio-side-links a:hover,.header .portfolio-logo:hover{color:#fff!important;text-decoration:underline;text-underline-offset:6px}
+/* Orange navigation accents without link underlines. */
+.header .nav-menu__link:hover,.header .nav-menu__link:focus-visible,.header .nav-menu__item.activePage>a,.mobile-menu .nav-menu__link:hover,.mobile-menu .nav-menu__link:focus-visible,.portfolio-side-links a:hover,.header .portfolio-logo:hover{color:#ff6a3a!important;text-decoration:none}
 @media(max-width:991px){
 .new-project-wrapper-3 .project-thumb-items{height:auto;background:#171717}
 .new-project-wrapper-3 .project-thumb-items>.hover-img{height:auto;width:100%;object-fit:contain;object-position:top;aspect-ratio:auto}
@@ -45,3 +45,14 @@
 .new-project-wrapper-3 .project-thumb-items .category-info{max-width:100%}
 .project-dialog{padding:20px;width:94vw}.project-dialog h2{font-size:26px}.project-links{flex-wrap:wrap}
 }
+
+.header a,.mobile-menu a,.portfolio-side-links a,.footer-new-3 a{transition:color .2s ease,background-color .2s ease,transform .2s ease}
+.header .portfolio-logo,.header .portfolio-logo:hover,.header .portfolio-logo:focus-visible{ text-decoration:none!important }
+.footer-new-3 .social-item-4 a{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid #ffffff40;border-radius:50%;color:#fff;background:transparent}
+.footer-new-3 .social-item-4 svg{width:22px;height:22px;fill:currentColor}
+.footer-new-3 .social-item-4 a:hover,.footer-new-3 .social-item-4 a:focus-visible{color:#fff;background:#ff6a3a;border-color:#ff6a3a;transform:translateY(-3px)}
+.footer-new-3 .list-area a:hover,.footer-new-3 .content-items a:hover,.footer-new-3 .list-area a:focus-visible,.footer-new-3 .content-items a:focus-visible{color:#ff6a3a;text-decoration:none}
+.hero-new-3 .social-icon a:hover,.hero-new-3 .social-icon a:focus-visible{background:#ff6a3a;color:#fff}
+.legacy h2,.legacy h3,.legacy h4,.project-dialog h2,.project-dialog h3{font-family:'Mona Sans',sans-serif}.project-dialog{font-family:'Satoshi',sans-serif}
+a:focus-visible,button:focus-visible{outline:2px solid #ff6a3a;outline-offset:5px}
+@media(prefers-reduced-motion:reduce){.header a,.mobile-menu a,.footer-new-3 a{transition:none}}
