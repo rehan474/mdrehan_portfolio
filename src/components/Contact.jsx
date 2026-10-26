@@ -80,8 +80,7 @@ export default function Contact() {
       const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
       const body = encodeURIComponent(`${form.msg}\n\n— ${form.name} (${form.email})`);
       window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-      setStatus("sent");
-      setForm({ name: "", email: "", msg: "" });
+      setStatus("email-opened");
       return;
     }
 
@@ -169,8 +168,9 @@ export default function Contact() {
 
         <Reveal as="form" className="form-card" onSubmit={handleSubmit} noValidate>
           <div className={`field ${errors.name ? "invalid" : ""}`}>
-            <label>Name</label>
+            <label htmlFor="contact-name">Name</label>
             <input
+              id="contact-name" name="name" autoComplete="name"
               type="text"
               placeholder="Your name"
               value={form.name}
@@ -179,8 +179,9 @@ export default function Contact() {
             {errors.name && <div className="field-error">{errors.name}</div>}
           </div>
           <div className={`field ${errors.email ? "invalid" : ""}`}>
-            <label>Email</label>
+            <label htmlFor="contact-email">Email</label>
             <input
+              id="contact-email" name="email" autoComplete="email"
               type="email"
               placeholder="you@company.com"
               value={form.email}
@@ -189,8 +190,8 @@ export default function Contact() {
             {errors.email && <div className="field-error">{errors.email}</div>}
           </div>
           <div className={`field ${errors.msg ? "invalid" : ""}`}>
-            <label>Message</label>
-            <textarea
+            <label htmlFor="contact-message">Message</label>
+            <textarea id="contact-message" name="message"
               placeholder="Tell me about the role or project..."
               value={form.msg}
               onChange={(e) => updateField("msg", e.target.value)}
@@ -205,13 +206,14 @@ export default function Contact() {
           >
             {status === "sending" ? "Sending…" : "Send Message"}
           </button>
+          {status === "email-opened" && <p role="status">Your email app has been opened. Please send the message there.</p>}
           {status === "sent" && (
-            <div className="form-success show">
+            <div role="status" className="form-success show">
               ✓ Message sent — thanks, I'll get back to you soon.
             </div>
           )}
           {status === "error" && (
-            <div className="form-success show" style={{ color: "#ff8080" }}>
+            <div role="status" className="form-success show" style={{ color: "#ff8080" }}>
               ✕ Something went wrong — please email {profile.email} directly instead.
             </div>
           )}

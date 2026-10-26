@@ -32,3 +32,16 @@
 .new-project-wrapper-3 .project-thumb-items{height:clamp(480px,41vw,710px)}
 .new-project-wrapper-3 .project-thumb-items > .hover-img{object-position:top center}
 @media(max-width:991px){.new-project-wrapper-3 .project-thumb-items{height:550px}}
+
+/* Monochrome navigation states across desktop and off-canvas menus. */
+.header .nav-menu__link:hover,.header .nav-menu__link:focus-visible,.header .nav-menu__item.activePage>a,.mobile-menu .nav-menu__link:hover,.mobile-menu .nav-menu__link:focus-visible,.portfolio-side-links a:hover,.header .portfolio-logo:hover{color:#fff!important;text-decoration:underline;text-underline-offset:6px}
+@media(max-width:991px){
+.new-project-wrapper-3 .project-thumb-items{height:auto;background:#171717}
+.new-project-wrapper-3 .project-thumb-items>.hover-img{height:auto;width:100%;object-fit:contain;object-position:top;aspect-ratio:auto}
+.new-project-wrapper-3 .project-thumb-items>.hover-img:first-child{display:none}
+.new-project-wrapper-3 .project-thumb-items:hover>.hover-img:nth-child(2){transform:none;opacity:1;filter:none}
+.new-project-wrapper-3 .project-thumb-items .project-content{position:relative;inset:auto;margin:0;padding:22px;border-radius:0 0 20px 20px;gap:18px}
+.new-project-wrapper-3 .project-thumb-items .project-content .title{max-width:none;width:100%;font-size:24px}
+.new-project-wrapper-3 .project-thumb-items .category-info{max-width:100%}
+.project-dialog{padding:20px;width:94vw}.project-dialog h2{font-size:26px}.project-links{flex-wrap:wrap}
+}
