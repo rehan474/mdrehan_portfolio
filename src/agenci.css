@@ -56,3 +56,5 @@
 .legacy h2,.legacy h3,.legacy h4,.project-dialog h2,.project-dialog h3{font-family:'Mona Sans',sans-serif}.project-dialog{font-family:'Satoshi',sans-serif}
 a:focus-visible,button:focus-visible{outline:2px solid #ff6a3a;outline-offset:5px}
 @media(prefers-reduced-motion:reduce){.header a,.mobile-menu a,.footer-new-3 a{transition:none}}
+
+.footer-new-3 .footer-widget-wrapper-new-4 .footer-middle-list .list-area a:hover,.footer-new-3 .footer-widget-wrapper-new-4 .footer-middle-list .list-area a:focus-visible{background:rgba(255,255,255,.18);color:#ff6a3a}
