@@ -77,7 +77,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #ff6a3a;outline-offset:5p
 .footer-new-3 .footer-right-cont a{overflow-wrap:anywhere}
 }
 .legacy :is(.tl-item,.faq-item,.badge-card,.contact-info-item){transition:background-color .25s ease,box-shadow .25s ease,border-color .25s ease}
-.legacy :is(.tl-item,.faq-item,.badge-card,.contact-info-item):is(:hover,:focus-within){background-color:#ff6a3a0d;box-shadow:inset 3px 0 #ff6a3a;border-color:#ff6a3a80}
+.legacy :is(.faq-item,.badge-card,.contact-info-item):is(:hover,:focus-within){background-color:#ff6a3a0d;box-shadow:inset 3px 0 #ff6a3a;border-color:#ff6a3a80}
+.legacy .tl-item:is(:hover,:focus-within){background-color:rgba(255,255,255,.025);box-shadow:none}
+.legacy .tl-item h3{transition:color .25s ease}
 .legacy :is(.tl-item,.faq-item,.badge-card):is(:hover,:focus-within) :is(h3,h4,.faq-q,.badge-icon){color:#ff6a3a}
 .legacy .tl-item.static{cursor:default}
 @media(prefers-reduced-motion:reduce){.legacy :is(.tl-item,.faq-item,.badge-card,.contact-info-item){transition:none}}
