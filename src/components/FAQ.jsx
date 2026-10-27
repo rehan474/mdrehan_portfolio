@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 function FaqItem({ item }) {
   const [open, setOpen] = useState(false);
   return (
-    <Reveal as="div" className={`faq-item ${open ? "open" : ""}`} onClick={() => setOpen(!open)}>
+    <Reveal as="div" className={`faq-item ${open ? "open" : ""}`} role="button" tabIndex={0} aria-expanded={open} onKeyDown={e => { if(e.key === "Enter" || e.key === " "){e.preventDefault();setOpen(!open);} }} onClick={() => setOpen(!open)}>
       <div className="faq-q">
         {item.q}
         <span className="chev">▾</span>

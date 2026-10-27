@@ -60,7 +60,7 @@ if($('#smooth-wrapper').length && $('#smooth-content').length){
 
 ////////////////////////////////////////////////////
 // 01. Section title Animation Js
-if ($(window).width() > 768 && $(".tw-char-animation").length > 0) {
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && $(".tw-char-animation").length > 0) {
     let char_come = gsap.utils.toArray(".tw-char-animation");
     char_come.forEach(splitTextLine => {
         const tl = gsap.timeline({
@@ -530,7 +530,7 @@ if ($('.thumbnail-three-area').length > 0) {
     if (document.querySelector(".des-portfolio-wrap")) {
         const pr = gsap.matchMedia();
 
-        pr.add("(min-width: 1199px)", () => {
+        pr.add("(prefers-reduced-motion: no-preference)", () => {
 
             const sections = document.querySelectorAll(".des-portfolio-panel");
             const wrap = document.querySelector(".des-portfolio-wrap");
@@ -549,7 +549,7 @@ if ($('.thumbnail-three-area').length > 0) {
                     ease: "none",
                     scrollTrigger: {
                         trigger: section,
-                        start: "top 14%",
+                        start: () => window.innerWidth < 1199 ? "top 100px" : "top 14%",
                         end: "bottom 80%",
                         scrub: true,
                         pin: true,

@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 function TimelineItem({ item }) {
   const [open, setOpen] = useState(true);
   return (
-    <Reveal as="div" className={`tl-item ${open ? "open" : ""}`} onClick={() => setOpen(!open)}>
+    <Reveal as="div" className={`tl-item ${open ? "open" : ""}`} role="button" tabIndex={0} aria-expanded={open} onKeyDown={e => { if(e.key === "Enter" || e.key === " "){e.preventDefault();setOpen(!open);} }} onClick={() => setOpen(!open)}>
       <div className="tl-dot" />
       <div className="tl-head">
         <div>

@@ -18,6 +18,8 @@ export async function startTemplateMotion() {
   if (!img.complete) { img.addEventListener('load',refresh,{once:true}); img.addEventListener('error',refresh,{once:true}); }
  });
  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  window.gsap?.from('.selected-work-title', {x:60, opacity:.2, ease:'none', scrollTrigger:{trigger:'.project-top-area',start:'top 95%',end:'top 55%',scrub:1}});
+  window.gsap?.from('.footer-textt', {y:40, opacity:.25, ease:'none', scrollTrigger:{trigger:'.footer-textt',start:'top 98%',end:'bottom bottom',scrub:1}});
   document.querySelectorAll('.legacy .portfolio-reveal').forEach(el => {
    window.gsap?.from(el, {y:24, duration:.65, ease:'power2.out', scrollTrigger:{trigger:el,start:'top 92%',once:true}});
   });
